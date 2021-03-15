@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			
+			a {
+				color: black;
+			}
+			
+			body {
+				padding: 0px;
+				margin: 0px;
+				background-color: #AAA;
+				font-family: "Rockwell";
+			}
+			
+			h1 {
+				font-size: 40px;
+			}
+		
+			ul {
+				margin-left:0;
+				padding-left:16px;
+			}
+			
+			.category {
+				line-height: 1.5em;
+			 	animation: fadeInWithDelay ease 1s;
+				margin-top: 5%;
+				margin-left: 7%;
+				margin-right: 7%;
+			}
+			
+			.centered {
+				text-align: center;
+			}
+			
+			.container {
+				width:100%;
+				height:100%;
+				display: flex;
+  			justify-content: center;
+			}
+			
+			.left {
+				width: 50%;
+				height:100%;
+				text-align: left;
+			}
+			
+			.page {
+				background-color: #BBB;
+				padding-top: 3%;
+				width:100%;
+				height: auto;
+				max-width: 500px;
+				text-align: center;
+				display: flex;
+				justify-content: center;
+			}
+			
+			.res {
+				margin: 3%;
+				padding: 3%;
+				background-color: #FFF;
+				width:80%;
+				max-width: 900px;
+				height:auto;
+			}
+			
+			.right {
+				width: 50%;
+				height:100%;
+				text-align: right;
+			}
+			
+			
+			.top {
+				line-height:0.5em;
+				animation: fadeIn ease 1s;
+				margin-left: 7%;
+				margin-right: 7%;
+				width:86%;
+			}
+			
+			.topcontainer {
+				background-color: aqua;
+				width:100%;
+			}
+			
+			@keyframes fadeIn {
+				0% {opacity:0;margin-top:10%;}
+				100% {opacity:1;margin-top:0%;}
+			}
+			
+			@keyframes fadeInWithDelay {
+				0% {opacity:0;}
+				50% {opacity:0;margin-top:10%;width:0%}
+				100% {opacity:1;margin-top:5%;width:86%}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			
+				<div class="res">
+					<div class="top centered">
+						
+							<h1>Lucas Tan</h1>
+						<h3><a href="mailto:lucas.j.tan@gmail.com">lucas.j.tan@gmail.com</a></h3>
+						<h4>Palo Alto, California</h4>
+
+					</div>
+
+					
+					<div class="category">
+						<h2>PROFILE</h2>
+						<hr>
+							Aspiring Software Engineer with a strong passion for coding and creative problem solving. Reliable, approachable and works well with others.  Seeking a summer internship experience to grow and apply my skills to real life problems.
+						<br>
+					</div>
+					
+					<div class="category">
+						
+						<h2>EXPERIENCE</h2>
+						<hr>
+						<b>Lead Instructor, <a href="https://www.roboticsforall.net">Robotics for All</a> (Oct 2020-Present)</b>
+						
+						<ul>
+							<li>Lead instructor for 8-week Scratch programming course to 4th-6th graders</li>
+							<li>Enlisted as part of a 3-person team to review and improve the 250-page course curriculum</li>
+							<li>5+ year recreational coding experience in Scratch (since 2nd grade).  Sample works: <a href="https://scratch.mit.edu/projects/56407812/"> Pixel Santa</a>, <a href="https://scratch.mit.edu/projects/58923400/">In The Dark</a>, <a href="https://scratch.mit.edu/projects/67917832/">Crazy Platformer 2</a>, <a href="https://snap.berkeley.edu/snap/snap.html#present:Username=95028587&ProjectName=Bubble%20and%20Quick%20Sort">Visualization of Sorting Algorithms</a></li>
+						</ul>
+						
+						<br>
+						
+						<b>Develop, train and integrate Genetic-Algorithm Robot into multi-user Tetris game (Aug 2020)</b>
+						
+						<ul>
+							<li>Developed and trained Java-based Tetris Bot using a Genetic-Algorithm (fitness function and looks ahead 5 pieces to produce best possible outcome)</li>
+							<li>As Tetr.io frontend does not provide open APIs, Charles Proxy is used to insert a modified script that extracts the game board data, feeds it to the trained bot to determine the next best move, and then instructs the frontend to execute that move.  This method runs 10 times faster than using screen scraping.</li>
+							<li>Tetris Bot does not perform t-spins, only hard drops.  In spite of that, it has beaten top ranked Tetris players on Tetr.io</li>
+							</ul>
+						<br>
+						
+						<b>Combines level design (difficulty, playability, fun factor), music theories (tempo, synchronization), choreography (dance chart), mathematics (3D effects, rotate, skew, zoom etc) and computer technologies (Lua scripting)</b>
+						
+						<ul>
+							<li>Published DDR mods for 11 soundtracks to date. Some mods took up to 50 hours to produce. Sample Works: <a href="https://www.youtube.com/watch?v=zvn4INxDnFE">Walkman</a>, <a href="https://www.youtube.com/watch?v=MVY8bSEbNKw">Within the Sadness</a></li>
+							<li>Received constructive and positive feedback from other DDR enthusiasts on Discord community</li>
+							<li>Built a wooden DDR dance pad with a Makey-Makey kit for 8th Grade Science Fair Project </li>
+						</ul>
+						
+						<br>
+						
+						<b>Minecraft Mods (Aug 2020-Present)</b>
+						
+						<ul>
+							<li>Develops client-based Java mods on-demand for private group of friends to enhance gameplay</li>
+							<li>Lack of documentation means a lot of trial and error and decompiling other mods to study other people's code</li>
+						</ul>
+							
+						<br>
+						
+						<b>Design, develop, beta-test and deploy iOS SpriteKit game on iOS App Store (Jan-Mar 2018)</b>
+						
+						<ul>
+							<li><a href="https://apps.apple.com/us/app/inverted-the-game/id1349594266">"Inverted" mobile game</a> written in Swift over a 8-week period.</li>
+							<li>Idea of the game and UI design was conceived in Scratch 4 years prior.</li>
+							<li>Developed a working prototype to flesh out the user interface, characters, physics, sounds, and level design for 50 levels. </li>
+							<li>Iteratively tested and refined software based on user feedback.  Beta-tested using Apple's TestFlight program</li>
+							<li>Published on App Store with screenshots and marketing website  </li>
+							<li>380+ downloads to date</li>
+							<li>Completed iOS App Development and Intro to iOS Game Development with SpriteKit courses</li>
+						</ul>
+							
+						<br>
+						
+						<b>Ported my Scratch clock program to run on Apple Watch in Swift (2018)</b>
+						
+						<ul>
+							<li>Worked with a graphic designer to improve my original Flower Clock design. </li>
+							<li><a href= "https://apps.apple.com/us/app/the-flower-clock/id1403196615">The Flower Clock</a>: 180+ downloads to date</li>
+						</ul>
+					</div>
+					
+					<div class="category">
+						<h2>KEY SKILLS</h2>
+						<hr>
+						<b>Programming: </b> Java, Swift, Python, Scratch, Javascript, HTML/CSS, Lua, Functional & Object-Oriented Programming <br>
+						<b>Version Control: </b> Github <br>
+						<b>Tools: </b> Google Docs/Sheets/Slides, Adobe Photoshop/Premiere Pro, GarageBand, FL Studio, Notion <br>
+						<b>Spoken Languages: </b> English, Chinese, Beginning Japanese
+					</div>
+					
+					<div class="category">
+						<h2>EDUCATION</h2>
+						<hr>
+						Palo Alto High School - Class of 2023, 3.93 GPA (Unweighted)<br>
+						American Mathematics Competitions (AMC) 12A Score: 100.5/150 (2021)<br>
+						American Invitational Mathematics Examination (AIME) Qualifier (2021)<br>
+						USA Computing Olympiad (USACO) Silver Division (Python, 2018)
+					</div>
+					
+					<div class="category">
+						<h2>EXTRACURRICULAR ACTIVITIES</h2>
+						<hr>
+						<ul>
+							<li>Volunteer Teaching to underserved communities at Robotics For All</li>
+							<li>Badminton (Varsity Team, Synergy Academy High School Competition Team)</li>
+							<li>Piano (CM Level 10)</li>
+							<li>Violin (Middle school Advanced & Chamber Orchestra, street busking) </li>
+							<li>Speedcubing (WCA ID 2014TANL01, 3x3x3 cube 20.01s, 2x2x2 cube 6.23s, Pyraminx 15.4s)</li>
+							<li>Tetris (Rank SS, Top 11% on <a href="https://www.tetr.io">tetr.io</a>)</li>
+						</ul>
+					</div>
+					
+					<div class="category">
+						<h2>AWARDS</h2>
+						<hr>
+						<ul>
+							<li>President's Education Awards for Outstanding Academic Excellence (2019)</li>
+							<li>Middle School Awards for Achievement, Citizenship & Participation (2016-2019, 4 times)</li>
+							<li>Piano CM Advanced Level State & Branch Honors (2020)</li>
+							<li>First Prize at 7th GOCAA International Piano Competition (2019)</li>
+							<li>First Place Winner (Intermediate Group B) at US Open Music Competition (2017)</li>
+							<li>Khan Academy LearnStorm Grand Prize (2015)</li>
+						</ul>
+					</div>
+				</div>
+			
+		</div>
+	</body>
+</html>
